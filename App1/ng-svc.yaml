@@ -1,1 +1,16 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: ng-app
+  name: ng-app
+  namespace: default
+spec:
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+      nodePort: 30010
+  selector:
+    app: ng-app
+  type: NodePort
