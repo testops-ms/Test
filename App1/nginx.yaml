@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: ng-app
-  name: ngin-app
+  name: ng-app
 spec:
   replicas: 1
   selector:
