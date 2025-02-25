@@ -15,5 +15,5 @@ spec:
         app: ng-app
     spec:
       containers:
-        - image: nginx
+        - image: nginx:1.27.3
           name: ng-app
