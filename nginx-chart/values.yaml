@@ -1,4 +1,5 @@
 # values.yaml
+replicaCount: 1
 image:
   repository: nginx
   pullPolicy: IfNotPresent
