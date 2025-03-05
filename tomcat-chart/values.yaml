@@ -1,0 +1,23 @@
+replicaCount: 1
+
+image:
+  repository: tomcat
+  tag: "9.0"  # Change it to the Tomcat version you want
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+
+ingress:
+  enabled: false
+  annotations: {}
+  hosts:
+    - host: tomcat.local
+      paths:
+        - /
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}
