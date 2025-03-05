@@ -1,0 +1,6 @@
+apiVersion: v2
+name: tomcat-chart
+description: A Helm chart for deploying Tomcat
+type: application
+version: 0.1.0
+appVersion: "9.0"  # Tomcat version you want to deploy
