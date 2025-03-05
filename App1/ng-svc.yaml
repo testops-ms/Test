@@ -4,7 +4,6 @@ metadata:
   labels:
     app: ng-app
   name: ng-app
-  namespace: default
 spec:
   ports:
     - port: 80
