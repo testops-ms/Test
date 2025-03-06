@@ -11,5 +11,6 @@ spec:
       target port: 8080
       protocol: TCP
       name: http
+      nodePort: {{ .Values.service.nodePort }}
   selector:
     app: tomcat
