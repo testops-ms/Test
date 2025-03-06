@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: tomcat  # Use a fixed name instead of using `{{ include "tomcat.fullname" . }}`
+  name: tomcat
   labels:
     app: tomcat  # You can also just use the name directly here.
 spec:
